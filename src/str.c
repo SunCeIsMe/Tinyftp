@@ -38,7 +38,7 @@ int str_all_space(char *str)
     int count = 0;
     for (size_t i = 0; i < strlen(str); ++i)
     {
-        if (!isspace(str))
+        if (!isspace(str[i]))
         {
             str[count++] = str[i];
         }
